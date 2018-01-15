@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">POCMediaAudio</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="intro_msg">POC to test the MediaPlayer API! Click the buttons below to start and stop the audio.</string>
+</resources>

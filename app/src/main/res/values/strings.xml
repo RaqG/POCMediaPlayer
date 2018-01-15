@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">POCMediaAudio</string>
+    <string name="volume" translatable="false">Volume</string>
+    <string name="plus" translatable="false">+</string>
+    <string name="min" translatable="false">-</string>
+    <string name="intro_msg">POC para testar a API MediaPlayer! Clique nos botões abaixo para iniciar e parar o audio.</string>
+    <string name="start">Iniciar</string>
+    <string name="pause">Pausar</string>
+    <string name="stop">Parar</string>
+</resources>
