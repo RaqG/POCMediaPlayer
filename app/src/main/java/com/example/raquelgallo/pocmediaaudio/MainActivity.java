@@ -62,7 +62,17 @@ public class MainActivity extends AppCompatActivity {
                     .build());
         }
         mediaPlayer.start();
+        audioEnded();
 
+    }
+
+    private void audioEnded() {
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                stopAudio();
+            }
+        });
     }
 
     @OnClick(R.id.pause_btn)
@@ -88,7 +98,8 @@ public class MainActivity extends AppCompatActivity {
                 volume += 0.01f;
                 mediaPlayer.setVolume(volume, volume);
             } else {
-                Snackbar.make(linearLayout, "Volume máximo!", Snackbar.LENGTH_LONG).show();
+                String volumeMsg = this.getResources().getString(R.string.max_volume);
+                Snackbar.make(linearLayout, volumeMsg, Snackbar.LENGTH_LONG).show();
             }
         }
     }
@@ -100,7 +111,8 @@ public class MainActivity extends AppCompatActivity {
                 volume -= 0.01f;
                 mediaPlayer.setVolume(volume, volume);
             } else {
-                Snackbar.make(linearLayout, "Volume mínimo!", Snackbar.LENGTH_LONG).show();
+                String volumeMsg = this.getResources().getString(R.string.min_volume);
+                Snackbar.make(linearLayout, volumeMsg, Snackbar.LENGTH_LONG).show();
             }
         }
     }

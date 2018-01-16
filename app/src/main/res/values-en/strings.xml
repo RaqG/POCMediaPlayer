@@ -5,4 +5,6 @@
     <string name="pause">Pause</string>
     <string name="stop">Stop</string>
     <string name="intro_msg">POC to test the MediaPlayer API! Click the buttons below to start and stop the audio.</string>
+    <string name="max_volume">Maximum volume!</string>
+    <string name="min_volume">Minimum volume!</string>
 </resources>
